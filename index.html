@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawth - Dog Walking Adventures</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #4CAF50, #2196F3);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .nav-btn {
+            background: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .nav-btn:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+        }
+        .nav-btn.secondary {
+            background: #2196F3;
+        }
+        .nav-btn.secondary:hover {
+            background: #1976D2;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .feature h3 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            border-top: 1px solid #eee;
+            margin-top: 40px;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        .contact-info {
+            background: #e8f5e8;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        @media (max-width: 600px) {
+            .nav-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🐾 Pawth</h1>
+        <p>Transform Your Dog Walks into Epic Adventures</p>
+    </div>
+
+    <div class="nav-buttons">
+        <a href="#privacy" class="nav-btn">Privacy Policy</a>
+        <a href="#terms" class="nav-btn secondary">Terms of Service</a>
+        <a href="#support" class="nav-btn">Support</a>
+    </div>
+
+    <div class="content">
+        <h2>Welcome to Pawth</h2>
+        <p>Pawth transforms ordinary dog walks into extraordinary adventures! Track your walks, discover AR treasures, complete exciting missions, and connect with fellow dog lovers in your community.</p>
+
+        <div class="features">
+            <div class="feature">
+                <h3>🗺️ GPS Tracking</h3>
+                <p>Track your walks with precise GPS, measure distance, and explore new routes</p>
+            </div>
+            <div class="feature">
+                <h3>🎯 AR Adventures</h3>
+                <p>Discover hidden treasures and interactive experiences through augmented reality</p>
+            </div>
+            <div class="feature">
+                <h3>🏆 Missions & Rewards</h3>
+                <p>Complete daily quests, earn XP, unlock badges, and collect bones</p>
+            </div>
+            <div class="feature">
+                <h3>👥 Social Community</h3>
+                <p>Connect with local dog owners, share adventures, and make new friends</p>
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <h3>📱 Download Pawth</h3>
+            <p>Available on iOS App Store and Google Play Store</p>
+            <p><strong>Coming Soon!</strong> - Currently in review process</p>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Section -->
+    <div class="content" id="privacy">
+        <h1>🔒 Privacy Policy</h1>
+        <div style="text-align: center; color: #666; margin-bottom: 20px;">
+            <em>Last Updated: August 28, 2025</em>
+        </div>
+
+        <h2>Introduction</h2>
+        <p>Pawth ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use the Pawth mobile application ("the App"). By using Pawth, you acknowledge that you have read and understood this Privacy Policy.</p>
+
+        <h2>Information We Collect</h2>
+
+        <h3>Personal Information</h3>
+        <ul>
+            <li><strong>Account Information:</strong> Name, email address, and profile information</li>
+            <li><strong>Dog Profile:</strong> Your dog's name, breed, age, and selected avatar</li>
+            <li><strong>User-Generated Content:</strong> Photos, posts, and social interactions</li>
+        </ul>
+
+        <h3>Automatically Collected Information</h3>
+        <ul>
+            <li><strong>Location Data:</strong> GPS coordinates for walk tracking and AR features</li>
+            <li><strong>Usage Data:</strong> App interactions, mission completions, and walking statistics</li>
+            <li><strong>Device Information:</strong> Device type, operating system, and app version</li>
+            <li><strong>Technical Data:</strong> Crash reports and performance analytics</li>
+        </ul>
+
+        <h3>Camera and Media</h3>
+        <ul>
+            <li><strong>Photos:</strong> Images captured during AR experiences, dog profiles, and social sharing</li>
+            <li><strong>Camera Access:</strong> Real-time camera feed for AR walking features and treasure hunting</li>
+            <li><strong>Photo Library:</strong> Access to save and share photos with your permission</li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+
+        <h3>Core App Functionality</h3>
+        <ul>
+            <li><strong>Walk Tracking:</strong> Monitor walking routes and distance for missions</li>
+            <li><strong>AR Features:</strong> Provide augmented reality experiences during walks</li>
+            <li><strong>Social Features:</strong> Enable friend connections and social feed interactions</li>
+            <li><strong>Achievements:</strong> Track progress and award badges for completed activities</li>
+        </ul>
+
+        <h3>App Improvement</h3>
+        <ul>
+            <li><strong>Analytics:</strong> Understand app usage patterns to improve features</li>
+            <li><strong>Performance:</strong> Monitor app stability and fix technical issues</li>
+            <li><strong>Personalization:</strong> Customize content based on your preferences</li>
+        </ul>
+
+        <h2>Information Sharing</h2>
+        <p><strong>We DO NOT Share Your Information With Third Parties For Marketing</strong></p>
+
+        <h3>Service Providers</h3>
+        <ul>
+            <li><strong>Firebase:</strong> Database and authentication services (Google)</li>
+            <li><strong>Google Maps:</strong> Location and mapping services</li>
+            <li><strong>Analytics:</strong> Crash reporting and performance monitoring</li>
+        </ul>
+
+        <h2>Data Security</h2>
+        <p>We implement industry-standard security measures to protect your information:</p>
+        <ul>
+            <li><strong>Encryption:</strong> All data transmitted between your device and our servers is encrypted</li>
+            <li><strong>Firebase Security:</strong> Data stored using Google Firebase security standards</li>
+            <li><strong>Access Controls:</strong> Limited access to personal information on a need-to-know basis</li>
+        </ul>
+
+        <h3>Data Retention</h3>
+        <ul>
+            <li><strong>Account Data:</strong> Retained while your account is active</li>
+            <li><strong>Usage Data:</strong> Anonymized analytics data may be retained longer for app improvement</li>
+            <li><strong>Location Data:</strong> Walk routes stored for personal history; can be deleted anytime</li>
+        </ul>
+
+        <h2>Your Rights and Choices</h2>
+
+        <h3>Account Control</h3>
+        <ul>
+            <li><strong>Access:</strong> View your personal information in the app settings</li>
+            <li><strong>Update:</strong> Modify your profile and dog information anytime</li>
+            <li><strong>Delete:</strong> Request account deletion and data removal</li>
+        </ul>
+
+        <h3>Location Services</h3>
+        <ul>
+            <li><strong>Control:</strong> Enable or disable location tracking in device settings</li>
+            <li><strong>Granular Permissions:</strong> Choose between "while using app" or "always" location access</li>
+            <li><strong>Opt-Out:</strong> App functionality may be limited without location access</li>
+        </ul>
+
+        <h3>Notifications</h3>
+        <ul>
+            <li><strong>Customize:</strong> Control which notifications you receive in app settings</li>
+            <li><strong>Disable:</strong> Turn off all notifications in device settings</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>Pawth is designed for users 13 years and older. We do not knowingly collect information from children under 13. If you believe a child has provided information to us, please contact us immediately.</p>
+
+        <h2>International Users</h2>
+        <p>If you're using Pawth outside the United States, your information may be transferred to and processed in the United States where our servers are located.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy periodically. We'll notify you of significant changes through the app or email. Continued use of the app constitutes acceptance of the updated policy.</p>
+
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have questions about this Privacy Policy or your data:</p>
+            <ul>
+                <li><strong>Email:</strong> privacy@pawth.app</li>
+                <li><strong>In-App:</strong> Contact form in Settings > Privacy & Legal</li>
+                <li><strong>Address:</strong> Pawth Privacy Team, [Your Business Address]</li>
+            </ul>
+        </div>
+
+        <h2>Your California Privacy Rights</h2>
+        <p>If you're a California resident, you have additional rights under the California Consumer Privacy Act (CCPA):</p>
+        <ul>
+            <li>Right to know what information we collect</li>
+            <li>Right to delete your information</li>
+            <li>Right to opt-out of sale (we don't sell personal information)</li>
+            <li>Right to non-discrimination for exercising these rights</li>
+        </ul>
+
+        <h2>Data Processing Legal Basis (GDPR)</h2>
+        <p>For users in the European Union, we process your data based on:</p>
+        <ul>
+            <li><strong>Consent:</strong> Location data and optional features</li>
+            <li><strong>Contract Performance:</strong> Core app functionality</li>
+            <li><strong>Legitimate Interests:</strong> App improvement and security</li>
+        </ul>
+    </div>
+
+    <!-- Terms of Service Section -->
+    <div class="content" id="terms">
+        <h1>📋 Terms of Service</h1>
+        <div style="text-align: center; color: #666; margin-bottom: 20px;">
+            <em>Last Updated: August 28, 2025</em>
+        </div>
+
+        <h2>Acceptance of Terms</h2>
+        <p>By downloading, installing, or using the Pawth mobile application ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+
+        <h2>Description of Service</h2>
+        <p>Pawth is a mobile application designed to enhance dog walking experiences through:</p>
+        <ul>
+            <li>GPS tracking and route mapping for dog walks</li>
+            <li>Augmented reality features and treasure hunting experiences</li>
+            <li>Mission and quest systems with rewards and achievements</li>
+            <li>Social features for connecting with other dog owners</li>
+            <li>Achievement and badge systems</li>
+            <li>Bone economy for in-app rewards</li>
+        </ul>
+
+        <h2>User Accounts and Responsibilities</h2>
+
+        <h3>Account Creation</h3>
+        <ul>
+            <li>You must provide accurate information when creating your account</li>
+            <li>You are responsible for maintaining the security of your account credentials</li>
+            <li>You must be at least 13 years old to use the App</li>
+            <li>One account per person; sharing accounts is prohibited</li>
+        </ul>
+
+        <h3>Acceptable Use</h3>
+        <ul>
+            <li>Use the App responsibly and in accordance with all applicable laws</li>
+            <li>Do not abuse, harass, or harm other users</li>
+            <li>Do not attempt to hack, reverse engineer, or disrupt the App</li>
+            <li>Do not share inappropriate content or violate community guidelines</li>
+            <li>Respect other users' privacy and personal information</li>
+        </ul>
+
+        <h2>Virtual Currency and Rewards</h2>
+
+        <h3>Bone Economy</h3>
+        <ul>
+            <li>Bones are virtual currency earned through app activities</li>
+            <li>Bones have no real-world monetary value and cannot be exchanged for money</li>
+            <li>We reserve the right to adjust bone earning rates and pricing</li>
+            <li>Bone balances may be reset for maintenance or fraud prevention</li>
+        </ul>
+
+        <h3>Fair Play</h3>
+        <ul>
+            <li>Earning bones through normal app usage is encouraged</li>
+            <li>Exploiting bugs or glitches to gain unfair advantages is prohibited</li>
+            <li>We may investigate and take action against suspicious earning patterns</li>
+            <li>Accounts found cheating may lose bones or face suspension</li>
+        </ul>
+
+        <h2>Privacy and Data</h2>
+
+        <h3>Information Collection</h3>
+        <ul>
+            <li>Our Privacy Policy explains what data we collect and how we use it</li>
+            <li>Location data is used only for app functionality as described</li>
+            <li>We implement security measures to protect your information</li>
+            <li>You can request data deletion by contacting us</li>
+        </ul>
+
+        <h3>Location Services</h3>
+        <ul>
+            <li>The App requires location access for core functionality</li>
+            <li>Location data is used for walk tracking and AR features only</li>
+            <li>You can disable location services, but app functionality will be limited</li>
+            <li>We do not share precise location data with third parties</li>
+        </ul>
+
+        <h2>Intellectual Property</h2>
+
+        <h3>Our Rights</h3>
+        <ul>
+            <li>The Pawth app, including design, code, and content, is our intellectual property</li>
+            <li>You may not copy, modify, or distribute the App without permission</li>
+            <li>All trademarks and logos are owned by their respective owners</li>
+        </ul>
+
+        <h3>User Content</h3>
+        <ul>
+            <li>You retain rights to your original content</li>
+            <li>You grant us a license to use content you share within the App</li>
+            <li>You represent that you have rights to any content you upload</li>
+        </ul>
+
+        <h2>Safety and Liability</h2>
+        <div style="background: #fff3cd; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
+            <h3>⚠️ Important Safety Notice</h3>
+            <p>Use the App responsibly and be aware of your surroundings. We are not responsible for accidents or injuries during app use. Walking and outdoor activities carry inherent risks. Always follow local laws and safety guidelines.</p>
+        </div>
+
+        <h3>Service Availability</h3>
+        <ul>
+            <li>We strive for reliable service but cannot guarantee 100% uptime</li>
+            <li>Features may be temporarily unavailable for maintenance</li>
+            <li>We may modify or discontinue features with reasonable notice</li>
+        </ul>
+
+        <h3>Limitation of Liability</h3>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING FROM YOUR USE OF THE APP.</p>
+
+        <h2>Account Termination</h2>
+
+        <h3>Your Rights</h3>
+        <ul>
+            <li>You may delete your account at any time through app settings</li>
+            <li>Account deletion will remove your data as described in our Privacy Policy</li>
+            <li>You may stop using the App at any time</li>
+        </ul>
+
+        <h3>Our Rights</h3>
+        <ul>
+            <li>We may suspend or terminate accounts that violate these Terms</li>
+            <li>We may terminate accounts for prolonged inactivity</li>
+            <li>We reserve the right to refuse service to anyone</li>
+        </ul>
+
+        <h2>Updates and Changes</h2>
+
+        <h3>App Updates</h3>
+        <ul>
+            <li>We regularly update the App to improve features and security</li>
+            <li>Some updates may be required to continue using the App</li>
+            <li>New features may be subject to additional terms</li>
+        </ul>
+
+        <h3>Terms Changes</h3>
+        <ul>
+            <li>We may modify these Terms with reasonable notice</li>
+            <li>Continued use after changes constitutes acceptance</li>
+            <li>Significant changes will be prominently communicated</li>
+        </ul>
+
+        <h2>Entire Agreement</h2>
+        <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and Pawth regarding use of the App.</p>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>For questions about these Terms:</p>
+            <ul>
+                <li><strong>Legal:</strong> legal@pawth.app</li>
+                <li><strong>Support:</strong> support@pawth.app</li>
+                <li><strong>Address:</strong> [Your Business Address]</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Support Section -->
+    <div class="content" id="support">
+        <h1>🛠️ Support</h1>
+
+        <h2>Get Help</h2>
+        <p>Need assistance with Pawth? We're here to help!</p>
+
+        <div class="features">
+            <div class="feature">
+                <h3>📧 Email Support</h3>
+                <p><strong>support@pawth.app</strong></p>
+                <p>Response time: 24-48 hours</p>
+            </div>
+            <div class="feature">
+                <h3>📱 In-App Help</h3>
+                <p>Settings → Help & Support</p>
+                <p>Access FAQ and contact form</p>
+            </div>
+            <div class="feature">
+                <h3>🔒 Privacy Questions</h3>
+                <p><strong>privacy@pawth.app</strong></p>
+                <p>Data and privacy inquiries</p>
+            </div>
+            <div class="feature">
+                <h3>⚖️ Legal Issues</h3>
+                <p><strong>legal@pawth.app</strong></p>
+                <p>Terms and legal matters</p>
+            </div>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>Getting Started</h3>
+        <p><strong>Q: How do I create an account?</strong><br>
+        A: Download the app and tap "Get Started" to create your profile and add your dog's information.</p>
+
+        <p><strong>Q: Is Pawth free to use?</strong><br>
+        A: Yes! Pawth's core features are completely free. Premium features may be available in the future.</p>
+
+        <h3>Location & Privacy</h3>
+        <p><strong>Q: Why does Pawth need location access?</strong><br>
+        A: Location access is required to track your walks, measure distance, and provide AR experiences. You can control location permissions in your device settings.</p>
+
+        <p><strong>Q: Is my location data private?</strong><br>
+        A: Yes! Your location data is encrypted and used only for app functionality. We never sell or share your location with third parties for marketing.</p>
+
+        <h3>Features & Gameplay</h3>
+        <p><strong>Q: How do I earn bones and XP?</strong><br>
+        A: Complete daily quests, go on walks, reach distance milestones, and participate in community activities to earn rewards.</p>
+
+        <p><strong>Q: Can I use Pawth without AR features?</strong><br>
+        A: Absolutely! While AR adds fun experiences, all core features work without camera access.</p>
+
+        <h3>Technical Issues</h3>
+        <p><strong>Q: The app isn't tracking my walk correctly.</strong><br>
+        A: Ensure location permissions are enabled and you have a good GPS signal. Try restarting the app if issues persist.</p>
+
+        <p><strong>Q: I'm not receiving notifications.</strong><br>
+        A: Check that notifications are enabled in both the app settings and your device settings for Pawth.</p>
+
+        <div class="contact-info">
+            <h2>Still Need Help?</h2>
+            <p>If you can't find the answer you're looking for, don't hesitate to reach out:</p>
+            <ul>
+                <li><strong>Email:</strong> support@pawth.app</li>
+                <li><strong>Response Time:</strong> We typically respond within 24-48 hours</li>
+                <li><strong>Business Hours:</strong> Monday-Friday, 9 AM - 6 PM PST</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Pawth. All rights reserved.</p>
+        <p>Made with ❤️ for dog lovers everywhere</p>
+    </div>
+</body>
+</html>
